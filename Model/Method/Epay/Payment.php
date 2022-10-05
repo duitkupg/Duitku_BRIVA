@@ -177,7 +177,7 @@ class Payment extends \Duitku\BRIVA\Model\Method\AbstractPayment
 		
 		$params = array(
              'merchantCode' => $merchantcode,
-             'paymentAmount' => $amount,
+             'paymentAmount' => $paymentAmount,
              'paymentMethod' => 'BR',
 			 'merchantOrderId' =>$orderId,
              'productDetails' => 'Order : '.$orderId,
@@ -238,9 +238,9 @@ class Payment extends \Duitku\BRIVA\Model\Method\AbstractPayment
     {
         try {
             $this->void($payment);
-            $this->_messageManager->addSuccess(__("The payment have been voided").' ('.$payment->getOrder()->getIncrementId().')');
+            $this->_messageManager->addSuccessMessage(__("The payment have been voided").' ('.$payment->getOrder()->getIncrementId().')');
         } catch (\Exception $ex) {
-            $this->_messageManager->addError($ex->getMessage());
+            $this->_messageManager->addErrorMessage($ex->getMessage());
         }
 
         return $this;
