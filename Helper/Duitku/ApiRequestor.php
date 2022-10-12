@@ -1,5 +1,4 @@
 <?php
-namespace Duitku\BRIVA\Helper\Duitku;
 
 class Duitku_BRIVA_ApiRequestor {
 

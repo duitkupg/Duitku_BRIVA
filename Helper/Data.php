@@ -14,9 +14,9 @@
  */
 
 namespace Duitku\BRIVA\Helper;
-// include_once('Duitku/DuitkuCore.php');
+include_once('Duitku/DuitkuCore.php');
 use Duitku\BRIVA\Helper\DuitkuConstants;
-use Duitku\BRIVA\Helper\Duitku\Duitku_BRIVA_Core;
+use Duitku_BRIVA_Core;
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**

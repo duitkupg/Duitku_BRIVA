@@ -1,7 +1,5 @@
 <?php
-namespace Duitku\BRIVA\Helper\Duitku;
-// include_once('ApiRequestor.php');
-use Duitku\Briva\Helper\Duitku\Duitku_BRIVA_ApiRequestor;
+include_once('ApiRequestor.php');
 class Duitku_BRIVA_Core {
 
   public static function getRedirectionUrl($baseUrl, $params)
